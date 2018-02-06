@@ -1,0 +1,32 @@
+{
+    "name": "zfegg/stratigility-logging-error",
+    "description": "Logging for errors in Zend Expressive",
+    "require": {
+        "psr/container": "^1.0",
+        "psr/log": "^1.0",
+        "psr/http-message": "^1.0",
+        "zendframework/zend-stratigility": "^2.1"
+    },
+    "require-dev": {
+        "monolog/monolog": "^1.23",
+        "zendframework/zend-diactoros": "^1.7",
+        "zendframework/zend-coding-standard": "^1.0",
+        "phpunit/phpunit": "^6.0"
+    },
+    "authors": [
+        {
+            "name": "Moln",
+            "email": "moln.xie@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Zfegg\\Stratigility\\LoggingError\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "ZfeggTest\\Stratigility\\LoggingError\\": "test/"
+        }
+    }
+}
