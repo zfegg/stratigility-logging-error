@@ -6,7 +6,8 @@ Logging for errors in Zend Expressive
 [![Latest Stable Version](https://poser.pugx.org/zfegg/stratigility-logging-error/v/stable.png)](https://packagist.org/packages/zfegg/stratigility-logging-error)
 
 
-实现 expressive 记录错误日志功能.
+实现 expressive 记录错误日志功能, 使用PSR3记录日志.
+
 Implement expressive logging errors.
 
 See https://docs.zendframework.com/zend-expressive/features/error-handling/#listening-for-errors
@@ -15,6 +16,7 @@ See https://docs.zendframework.com/zend-expressive/features/error-handling/#list
 --------------
 
 1. Install via composer.
+
    通过 composer 安装依赖.
 
    ```bash
@@ -22,7 +24,9 @@ See https://docs.zendframework.com/zend-expressive/features/error-handling/#list
    ```
 
 2. Add `ConfigProvider::class` in `config/config.php`. 
+
    在 `config/config.php` 中添加 `ConfigProvider::class` 配置.
 
 3. Configure your `Psr\Log\LoggerInterface::class` service.
+
    在你的服务中配置 `Psr\Log\LoggerInterface::class` (PSR3日志实现)服务.
