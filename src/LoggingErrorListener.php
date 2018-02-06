@@ -12,7 +12,7 @@ class LoggingErrorListener
     /**
      * Log message string with placeholders
      */
-    private $message = '{} "%s %s": <<<%s<<<';
+    private $message = '%s "%s %s": <<<%s<<<';
 
     private $logger;
 
