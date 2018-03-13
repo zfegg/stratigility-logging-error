@@ -20,7 +20,9 @@ class LoggingErrorListenerFactoryTest extends TestCase
             $container,
             ErrorHandler::class,
             function () {
-                return new ErrorHandler(new Response());
+                return new ErrorHandler(function () {
+                    return new Response();
+                });
             }
         );
 
