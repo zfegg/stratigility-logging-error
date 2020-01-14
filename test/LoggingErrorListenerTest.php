@@ -6,9 +6,9 @@ use Monolog\Handler\TestHandler;
 use Monolog\Logger;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\NullLogger;
-use Zend\Diactoros\Request;
-use Zend\Diactoros\Response;
-use Zend\Diactoros\ServerRequest;
+use Laminas\Diactoros\Request;
+use Laminas\Diactoros\Response;
+use Laminas\Diactoros\ServerRequest;
 use Zfegg\Stratigility\LoggingError\LoggingErrorListener;
 
 class LoggingErrorListenerTest extends TestCase

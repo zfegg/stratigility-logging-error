@@ -3,7 +3,7 @@
 
 namespace Zfegg\Stratigility\LoggingError;
 
-use Zend\Stratigility\Middleware\ErrorHandler;
+use Laminas\Stratigility\Middleware\ErrorHandler;
 
 class ConfigProvider
 {

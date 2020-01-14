@@ -6,7 +6,7 @@ namespace Zfegg\Stratigility\LoggingError;
 use Psr\Container\ContainerInterface;
 use Psr\Log\LoggerInterface;
 use Psr\Log\NullLogger;
-use Zend\Stratigility\Middleware\ErrorHandler;
+use Laminas\Stratigility\Middleware\ErrorHandler;
 
 class LoggingErrorListenerFactory
 {
