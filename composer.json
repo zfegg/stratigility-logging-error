@@ -12,8 +12,7 @@
         "psr/container": "^1.0",
         "psr/log": "^1.0",
         "psr/http-message": "^1.0",
-        "laminas/laminas-stratigility": "^2.1 || ^3.0.0rc1",
-        "laminas/laminas-dependency-plugin": "^1.0"
+        "laminas/laminas-stratigility": "^2.1 || ^3.0.0rc1"
     },
     "require-dev": {
         "monolog/monolog": "^1.23",
