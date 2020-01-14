@@ -4,8 +4,8 @@ namespace Zfegg\Stratigility\LoggingError;
 
 use PHPUnit\Framework\TestCase;
 use Psr\Container\ContainerInterface;
-use Zend\Diactoros\Response;
-use Zend\Stratigility\Middleware\ErrorHandler;
+use Laminas\Diactoros\Response;
+use Laminas\Stratigility\Middleware\ErrorHandler;
 
 class LoggingErrorListenerFactoryTest extends TestCase
 {
