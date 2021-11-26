@@ -1,24 +1,27 @@
 {
     "name": "zfegg/stratigility-logging-error",
-    "description": "Logging for errors in Zend Expressive",
+    "description": "Logging for errors in Mezzio",
     "license": "MIT",
     "keywords": [
         "log",
         "error",
+        "mezzio",
+        "laminas",
         "expressive",
         "zend"
     ],
     "require": {
-        "psr/container": "^1.0",
-        "psr/log": "^1.0",
+        "php": ">=7.4",
+        "psr/container": "^1.0 || ^2.0",
+        "psr/log": "^1.0 || ^2.0 || ^3.0",
         "psr/http-message": "^1.0",
-        "laminas/laminas-stratigility": "^2.1 || ^3.0.0rc1"
+        "laminas/laminas-stratigility": "^2.1 || ^3.0.0"
     },
     "require-dev": {
         "monolog/monolog": "^1.23",
-        "laminas/laminas-diactoros": "^1.7",
-        "laminas/laminas-coding-standard": "^1.0",
-        "phpunit/phpunit": "^6.0"
+        "laminas/laminas-diactoros": "^2.0",
+        "slevomat/coding-standard": "^7.0.12",
+        "phpunit/phpunit": "^9.0"
     },
     "authors": [
         {
@@ -26,6 +29,12 @@
             "email": "moln.xie@gmail.com"
         }
     ],
+    "scripts": {
+        "cs-check": "phpcs",
+        "cs-fix": "phpcbf",
+        "test": "phpunit --colors=always",
+        "test-coverage": "phpunit --colors=always --coverage-clover clover.xml"
+    },
     "autoload": {
         "psr-4": {
             "Zfegg\\Stratigility\\LoggingError\\": "src/"
