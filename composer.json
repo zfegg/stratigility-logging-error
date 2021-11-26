@@ -35,6 +35,11 @@
         "test": "phpunit --colors=always",
         "test-coverage": "phpunit --colors=always --coverage-clover clover.xml"
     },
+    "extra": {
+        "laminas": {
+            "config-provider": "Zfegg\\Stratigility\\LoggingError\\ConfigProvider"
+        }
+    },
     "autoload": {
         "psr-4": {
             "Zfegg\\Stratigility\\LoggingError\\": "src/"

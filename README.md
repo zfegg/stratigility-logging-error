@@ -6,11 +6,11 @@ Logging for errors in Mezzio
 [![Latest Stable Version](https://poser.pugx.org/zfegg/stratigility-logging-error/v/stable.png)](https://packagist.org/packages/zfegg/stratigility-logging-error)
 
 
-实现 expressive 记录错误日志功能, 使用PSR3记录日志.
+实现 mezzio 记录错误日志功能, 使用PSR3记录日志.
 
-Implement expressive logging errors.
+Implement mezzio logging errors.
 
-See https://docs.zendframework.com/zend-expressive/features/error-handling/#listening-for-errors
+See https://docs.zendframework.com/zend-mezzio/features/error-handling/#listening-for-errors
 
 使用说明/Usage
 --------------
