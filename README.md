@@ -1,7 +1,7 @@
-Logging for errors in Zend Expressive
+Logging for errors in Mezzio
 =====================================
 
-[![Build Status](https://travis-ci.org/zfegg/stratigility-logging-error.png)](https://travis-ci.org/zfegg/stratigility-logging-error)
+[![GitHub Actions: Run tests](https://github.com/zfegg/stratigility-logging-error/workflows/qa/badge.svg)](https://github.com/zfegg/stratigility-logging-error/actions?query=workflow%3A%22qa%22)
 [![Coverage Status](https://coveralls.io/repos/github/zfegg/stratigility-logging-error/badge.svg?branch=master)](https://coveralls.io/github/zfegg/stratigility-logging-error?branch=master)
 [![Latest Stable Version](https://poser.pugx.org/zfegg/stratigility-logging-error/v/stable.png)](https://packagist.org/packages/zfegg/stratigility-logging-error)
 

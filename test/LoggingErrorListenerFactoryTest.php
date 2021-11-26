@@ -1,31 +1,25 @@
 <?php
 
-namespace Zfegg\Stratigility\LoggingError;
+declare(strict_types = 1);
+
+namespace ZfeggTest\Stratigility\LoggingError;
 
 use PHPUnit\Framework\TestCase;
 use Psr\Container\ContainerInterface;
-use Laminas\Diactoros\Response;
-use Laminas\Stratigility\Middleware\ErrorHandler;
+use Zfegg\Stratigility\LoggingError\LoggingErrorListener;
+use Zfegg\Stratigility\LoggingError\LoggingErrorListenerFactory;
 
 class LoggingErrorListenerFactoryTest extends TestCase
 {
 
-    public function testInvoke()
+    public function testInvoke(): void
     {
         $container = $this->createMock(ContainerInterface::class);
         $container->method('has')->willReturn(false);
 
         $factory = new LoggingErrorListenerFactory();
-        $result = $factory(
-            $container,
-            ErrorHandler::class,
-            function () {
-                return new ErrorHandler(function () {
-                    return new Response();
-                });
-            }
-        );
+        $result = $factory($container);
 
-        $this->assertInstanceOf(ErrorHandler::class, $result);
+        $this->assertInstanceOf(LoggingErrorListener::class, $result);
     }
 }

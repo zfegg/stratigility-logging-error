@@ -1,41 +1,34 @@
 <?php
 
+declare(strict_types = 1);
+
 namespace Zfegg\Stratigility\LoggingError;
 
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
 use Psr\Log\LoggerInterface;
 
-class LoggingErrorListener
+final class LoggingErrorListener
 {
 
     /**
      * Log message string with placeholders
      */
-    private $message = '%s "%s %s": <<<%s<<<';
+    private string $message;
 
-    private $logger;
+    private LoggerInterface $logger;
 
-    /**
-     * Set log format
-     *
-     * @param string $message
-     */
-    public function setMessage($message)
+    public function __construct(LoggerInterface $logger, string $message = '%s "%s %s": <<<%s<<<')
     {
+        $this->logger = $logger;
         $this->message = $message;
     }
 
-    public function __construct(LoggerInterface $logger)
-    {
-        $this->logger = $logger;
-    }
-
     public function __invoke(
-        $error,
+        \Throwable $error,
         ServerRequestInterface $request,
         ResponseInterface $response
-    ) {
+    ): void {
         $this->logger->error(
             sprintf(
                 $this->message,
