@@ -3,10 +3,10 @@ Logging for errors in Mezzio
 
 [![GitHub Actions: Run tests](https://github.com/zfegg/stratigility-logging-error/workflows/qa/badge.svg)](https://github.com/zfegg/stratigility-logging-error/actions?query=workflow%3A%22qa%22)
 [![Coverage Status](https://coveralls.io/repos/github/zfegg/stratigility-logging-error/badge.svg?branch=master)](https://coveralls.io/github/zfegg/stratigility-logging-error?branch=master)
-[![Latest Stable Version](http://poser.pugx.org/zfegg/stratigility-logging-error/v)](https://packagist.org/packages/zfegg/stratigility-logging-error)
-[![Total Downloads](http://poser.pugx.org/zfegg/stratigility-logging-error/downloads)](https://packagist.org/packages/zfegg/stratigility-logging-error)
-[![License](http://poser.pugx.org/zfegg/stratigility-logging-error/license)](https://packagist.org/packages/zfegg/stratigility-logging-error)
-[![PHP Version Require](http://poser.pugx.org/zfegg/stratigility-logging-error/require/php)](https://packagist.org/packages/zfegg/stratigility-logging-error)
+[![Latest Stable Version](https://poser.pugx.org/zfegg/stratigility-logging-error/v)](https://packagist.org/packages/zfegg/stratigility-logging-error)
+[![Total Downloads](https://poser.pugx.org/zfegg/stratigility-logging-error/downloads)](https://packagist.org/packages/zfegg/stratigility-logging-error)
+[![License](https://poser.pugx.org/zfegg/stratigility-logging-error/license)](https://packagist.org/packages/zfegg/stratigility-logging-error)
+[![PHP Version Require](https://poser.pugx.org/zfegg/stratigility-logging-error/require/php)](https://packagist.org/packages/zfegg/stratigility-logging-error)
 
 
 实现 mezzio 记录错误日志功能, 使用PSR3记录日志.
