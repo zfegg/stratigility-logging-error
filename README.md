@@ -10,7 +10,7 @@ Logging for errors in Mezzio
 
 Implement mezzio logging errors.
 
-See https://docs.zendframework.com/zend-mezzio/features/error-handling/#listening-for-errors
+See https://docs.mezzio.dev/mezzio/v3/features/error-handling/#listening-for-errors
 
 使用说明/Usage
 --------------
